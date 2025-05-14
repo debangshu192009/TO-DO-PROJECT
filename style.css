@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --bg_color: rgb(145, 143, 143);
+    --bg_color2: rgb(92, 90, 90);
+    --text_color: black;
+    --text_color2: rgb(221, 219, 219);
+}
+
+body.light-theme {
+  --bg_color: #b1abab;
+  --bg_color2:rgb(209, 204, 204);
+  --text_color: #444343;
+  --text_color2: rgb(24, 23, 23);
+}
+
+body {
+    background-color: var(--text_color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    height: 800px;
+    width: 550px;
+    border-radius: 10px;
+    background-color: var(--bg_color2);
+}
+
+.container_head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#Theme {
+    position: absolute;
+    right: 70px;
+    font-size: 20px;
+    color: var(--text_color2);
+    cursor: pointer;
+}
+
+#Themebtn {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    height: 25px;
+    width: 50px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+#Themecircle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--text_color);
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.heading {
+    font-size: 35px;
+    color: var(--text_color);
+}
+
+.addlist {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 450px;
+    text-align: center;
+}
+
+#filter {
+    height: 40px;
+    width: 90px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background-color: var(--bg_color);
+    text-align: center;
+    font-size: 14px;
+    color: var(--text_color2);
+    cursor: pointer;
+}
+
+#filter:hover {
+    background-color: var(--bg_color2);
+    box-shadow: 1px 1px 4px 4px var(--text_color);
+}
+
+.addlist input {
+    height: 40px;
+    width: 70%;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.addlist input::placeholder {
+    font-size: 18px;
+    color: var(--bg_color);
+}
+
+.addlist input:hover {
+    box-shadow: 2px 2px 2px 2px var(--text_color);
+}
+
+#ClearInput {
+    position: absolute;
+    right: 100px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#Add {
+    padding-bottom: 5px;
+    height: 40px;
+    width: 90px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: var(--bg_color);
+    color: var(--text_color);
+    cursor: pointer;
+}
+
+#Add:hover {
+    background-color: var(--bg_color2);
+    box-shadow: 1px 1px 4px 4px var(--text_color2);
+}
+
+.allLists {
+    position: relative;
+    display: flex;
+    height: 580px;
+    width: 450px;
+    background-color: var(--bg_color);
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.allLists #ul{
+    margin-top: 10px;
+    height: 510px;
+    width: 430px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#save {
+    position: absolute;
+    right: 15px;
+    bottom: 8px;
+    height: 40px;
+    width: 70px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: var(--bg_color2);
+    color: var(--text_color);
+    cursor: pointer;
+}
+
+#save:hover {
+    background-color: var(--text_color2);
+    box-shadow: 1px 1px 4px 4px var(--text_color);
+}
+
+#show {
+    position: absolute;
+    right: 100px;
+    bottom: 8px;
+    height: 40px;
+    width: 70px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: var(--bg_color2);
+    color: var(--text_color2);
+    cursor: pointer;
+}
+
+#show:hover {
+    background-color: var(--text_color);
+    box-shadow: 1px 1px 4px 4px var(--text_color2);
+}
+
+#Blank {
+    height: 30px;
+    width: 30px;
+    filter: invert();
+    cursor: pointer;
+}
+
+#closeli {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+
+li {
+    position: relative;
+    margin-top: 15px;
+    list-style: none;
+    display: flex;
+    height: 40px;
+    width: 400px;
+    border: none;
+    align-items: center;
+    gap: 25px;
+    font-size: 20px;
+}
+
+#time {
+    position: absolute;
+    top: 11px;
+    left: 200px;
+    font-size: 16px;
+    color: var(--bg_color2);
+    overflow: hidden;
+}
+
+
+.footer {
+    position: relative;
+    margin: auto;
+    display: flex;
+    width: 80%;
+    font-size: 20px;
+    color: var(--text_color2);
+    cursor: pointer;
+}
+
+#div1 {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+#add {
+    position: absolute;
+    bottom: -10px;
+    left: 85px;
+}
+
+#div2 {
+    position: absolute;
+    bottom: -10px;
+    left: 105px;
+}
+
+#complete {
+    position: absolute;
+    bottom: -10px;
+    left: 165px;
+}
+
+#div3 {
+    position: absolute;
+    bottom: -10px;
+    left: 180px;
+}
+
+#Delete {
+    position: absolute;
+    bottom: -10px;
+    left: 350px;
+}
+
+#Delete:hover {
+    text-decoration: underline;
+    color: var(--text_color);
+}

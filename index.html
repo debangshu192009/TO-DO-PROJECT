@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="container_head">
+            <div class="heading">Your To Do List</div>
+            <div id="Theme">Theme</div>
+            <button id="Themebtn">
+                <div id="Themecircle"></div>
+            </button>
+            
+        </div>
+        
+        
+        <div class="addlist">
+            <select name="filter" id="filter">
+                <option value="all">All</option>
+                <option value="Completed">Completed</option>
+            </select>
+            <input type="text" id="Input" placeholder="Enter Task To Add ">
+            <img id="ClearInput" src="close.png" alt="">
+            <button id="Add">Add</button>
+        </div>
+        
+        <div class="allLists">
+            <ul id="ul">
+
+            </ul>
+            <button id="save">Save</button>
+        </div>
+
+
+        <div class="footer">
+            <div id="div1">You Add</div>
+            <div id="add" ></div>
+            <div id="div2">Tasks/</div>
+            <div id="complete"></div>
+            <div id="div3">Completed</div>
+            <div id="Delete">Delete All</div>
+        </div>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+    <script src="nextScript.js"></script>
+</body>
+
+</html>
